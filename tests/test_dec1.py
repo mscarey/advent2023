@@ -28,6 +28,7 @@ class TestToy:
             ("4nineeightseven2", 42),
             ("zoneight234", 14),
             ("7pqrstsixteen", 76),
+            ("eightwo", 82),
         ],
     )
     def test_wordy_trebuchet(self, code, result):
@@ -39,4 +40,4 @@ class TestReal:
         assert dec1.get_answer(toy=False) == 54331
 
     def test_get_final_answer(self):
-        assert dec1.get_final_answer(toy=False) == 54533
+        assert dec1.get_final_answer(toy=False) == 54518
