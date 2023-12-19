@@ -31,3 +31,7 @@ class TestDay:
     def test_get_real_answer(self):
         result = dec7.get_answer(toy=False)
         assert result == 0
+
+    def test_get_new_answer(self):
+        result = dec7.get_new_answer()
+        assert result == 6440
