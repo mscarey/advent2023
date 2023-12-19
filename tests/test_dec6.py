@@ -3,7 +3,7 @@ from functools import reduce
 from advent import dec6
 
 
-class TestDay5:
+class TestDay6:
     def test_get_data(self):
         data = dec6.get_data()
         assert data[0].distance == 9
