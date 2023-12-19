@@ -33,5 +33,10 @@ class TestDay:
         assert result == 0
 
     def test_get_new_answer(self):
-        result = dec7.get_new_answer()
-        assert result == 6440
+        result = dec7.get_answer(joker=True)
+        assert result == 5905
+
+    @pytest.mark.skip
+    def test_get_new_real_answer(self):
+        result = dec7.get_answer(toy=False, joker=True)
+        assert result == 0
